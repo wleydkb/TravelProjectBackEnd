@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Travel.Core\Travel.Core.csproj" />
-    <ProjectReference Include="..\Travel.Infrastructure\Travel.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

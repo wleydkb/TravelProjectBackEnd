@@ -41,6 +41,8 @@ namespace Travel.Infrastructure.Data
                 b.HasIndex(x => x.OfferId);
                 b.Property(x => x.Price).HasColumnType("decimal(18,2)");
             });
+            modelBuilder.Entity<FlightCache>()
+       .HasIndex(x => new { x.Origin, x.Destination, x.DepartureDate, x.CachedAt });
         }
     }
 }
